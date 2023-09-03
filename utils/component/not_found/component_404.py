@@ -57,11 +57,11 @@ document.title = '404 Not Found';
             
             @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
             
-            *{
+            * {
                 font-family: 'Recursive', sans-serif;
             }
             
-            .theme-choice:hover{
+            .theme-choice:hover {
                 background-color: #08956E;
                 transition: 0.5s;
             }
@@ -74,7 +74,7 @@ document.title = '404 Not Found';
                 background-color: #1fa37d;
             }
             
-            .social-icon a ion-icon{
+            .social-icon a ion-icon {
                 color: inherit;
                 padding: 8px;
                 margin: 8px;
@@ -83,12 +83,12 @@ document.title = '404 Not Found';
                 font-size: 20px;
             }
             
-            .social-icon a ion-icon:hover{
+            .social-icon a ion-icon:hover {
                 background-color: #08956E;
                 transition: 0.5s;
             }
             
-            .jump-top a ion-icon{
+            .jump-top a ion-icon {
                 color: inherit;
                 padding: 8px;
                 margin: 8px;
@@ -106,11 +106,11 @@ document.title = '404 Not Found';
             
             @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
             
-            *{
+            * {
                 font-family: 'Recursive', sans-serif;
             }
             
-            .theme-choice:hover{
+            .theme-choice:hover {
                 background-color: #08956E;
                 transition: 0.5s;
             }
@@ -123,7 +123,7 @@ document.title = '404 Not Found';
                 background-color: #1fa37d;
             }
             
-            .social-icon a ion-icon{
+            .social-icon a ion-icon {
                 color: inherit;
                 padding: 8px;
                 margin: 8px;
@@ -132,12 +132,12 @@ document.title = '404 Not Found';
                 font-size: 20px;
             }
             
-            .social-icon a ion-icon:hover{
+            .social-icon a ion-icon:hover {
                 background-color: #08956E;
                 transition: 0.5s;
             }
             
-            .jump-top a ion-icon{
+            .jump-top a ion-icon {
                 color: inherit;
                 padding: 8px;
                 margin: 8px;

@@ -9,7 +9,7 @@ def accordion_request() -> Component:
         html.div(
             {
                 'class_name': 'accordion',
-                'id': 'accordion-rps-vs-bot'
+                'id': 'accordion-rps-vs-bot accordion-parameter-request'
             },
             html.div(
                 {

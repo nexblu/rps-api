@@ -57,11 +57,11 @@ document.title = 'Contact Ditttt RPS API';
             
             @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
             
-            *{
+            * {
                 font-family: 'Recursive', sans-serif;
             }
             
-            .theme-choice:hover{
+            .theme-choice:hover {
                 background-color: #08956E;
                 transition: 0.5s;
             }
@@ -96,7 +96,7 @@ document.title = 'Contact Ditttt RPS API';
                 color: var(--color-light);
             }
             
-            .social-icon a ion-icon{
+            .social-icon a ion-icon {
                 color: inherit;
                 padding: 8px;
                 margin: 8px;
@@ -105,12 +105,12 @@ document.title = 'Contact Ditttt RPS API';
                 font-size: 20px;
             }
             
-            .social-icon a ion-icon:hover{
+            .social-icon a ion-icon:hover {
                 background-color: #08956E;
                 transition: 0.5s;
             }
             
-            .jump-top a ion-icon{
+            .jump-top a ion-icon {
                 color: inherit;
                 padding: 8px;
                 margin: 8px;
@@ -123,11 +123,11 @@ document.title = 'Contact Ditttt RPS API';
                 '''
             @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
             
-            *{
+            * {
                 font-family: 'Recursive', sans-serif;
             }
             
-            .theme-choice:hover{
+            .theme-choice:hover {
                 background-color: #08956E;
                 transition: 0.5s;
             }
@@ -162,7 +162,7 @@ document.title = 'Contact Ditttt RPS API';
                 color: var(--color-light);
             }
             
-            .social-icon a ion-icon{
+            .social-icon a ion-icon {
                 color: inherit;
                 padding: 8px;
                 margin: 8px;
@@ -171,12 +171,12 @@ document.title = 'Contact Ditttt RPS API';
                 font-size: 20px;
             }
             
-            .social-icon a ion-icon:hover{
+            .social-icon a ion-icon:hover {
                 background-color: #08956E;
                 transition: 0.5s;
             }
             
-            .jump-top a ion-icon{
+            .jump-top a ion-icon {
                 color: inherit;
                 padding: 8px;
                 margin: 8px;
