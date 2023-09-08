@@ -6,6 +6,53 @@ from reactpy.core.vdom import make_vdom_constructor
 @component
 def component_footer() -> Component:
     ion_icon = make_vdom_constructor('ion-icon')
+
+    footer_icon = {
+        'instagram': {
+            'href': 'https://www.instagram.com/ditttt.prm/',
+            'target': '_blank',
+            'name': 'logo-instagram'
+        },
+        'github': {
+            'target': '_blank',
+            'href': 'https://github.com/Ditttt?tab=repositories',
+            'name': 'logo-github'
+        },
+        'contact': {
+            'href': '/contact',
+            'target': '',
+            'name': 'mail-open-outline'
+        },
+        'store': {
+            'target': '_blank',
+            'href': 'https://itemku.com/t/boedoet-store?search_keyword=Boedoet%20Store&searchquery=Boedoet%20St&from=searchhomepage',
+            'name': 'storefront-outline'
+        },
+        'donation': {
+            'href': '/donation',
+            'target': '',
+            'name': 'cash-outline'
+        }
+    }
+
+    component_icon = []
+    index = 0
+    for key, value in footer_icon.items():
+        component_icon.append(
+            html.a(
+                {
+                    'target': value['target'],
+                    'href': value['href'],
+                    'class_name': 'text-decoration-none text-dark'
+                },
+                ion_icon(
+                    {
+                        'name': value['name'],
+                    }
+                )
+            ),
+        )
+
     return html._(
         html.footer(
             {
@@ -42,64 +89,7 @@ def component_footer() -> Component:
                         {
                             'class_name': 'social-icon d-flex justify-content-center'
                         },
-                        html.a(
-                            {
-                                'target': '_blank',
-                                'href': 'https://www.instagram.com/ditttt.prm/',
-                                'class_name': 'text-decoration-none text-dark'
-                            },
-                            ion_icon(
-                                {
-                                    'name': 'logo-instagram',
-                                }
-                            )
-                        ),
-                        html.a(
-                            {
-                                'target': '_blank',
-                                'href': 'https://github.com/Ditttt?tab=repositories',
-                                'class_name': 'text-decoration-none text-dark'
-                            },
-                            ion_icon(
-                                {
-                                    'name': 'logo-github',
-                                }
-                            )
-                        ),
-                        html.a(
-                            {
-                                'href': '/contact',
-                                'class_name': 'text-decoration-none text-dark'
-                            },
-                            ion_icon(
-                                {
-                                    'name': 'mail-open-outline',
-                                }
-                            )
-                        ),
-                        html.a(
-                            {
-                                'target': '_blank',
-                                'href': 'https://itemku.com/t/boedoet-store?search_keyword=Boedoet%20Store&searchquery=Boedoet%20St&from=searchhomepage',
-                                'class_name': 'text-decoration-none text-dark'
-                            },
-                            ion_icon(
-                                {
-                                    'name': 'storefront-outline',
-                                }
-                            )
-                        ),
-                        html.a(
-                            {
-                                'href': '/donation',
-                                'class_name': 'text-decoration-none text-dark'
-                            },
-                            ion_icon(
-                                {
-                                    'name': 'cash-outline',
-                                }
-                            )
-                        )
+                        component_icon
                     ),
                     html.hr(
                         {
