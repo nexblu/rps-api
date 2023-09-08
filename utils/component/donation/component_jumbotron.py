@@ -40,7 +40,7 @@ def component_jumbotron(is_dark_theme) -> Component:
                             },
                             html.p(
                                 {
-                                    'class_name': f'judul judul-1 text-center {"text-light" if is_dark_theme else "text-dark"}',
+                                    'class_name': f'judul judul-1 text-center {"text-light" if is_dark_theme else "text-dark"} fw-bold',
                                 },
                                 'Donation',
                             ),

@@ -12,10 +12,32 @@ from reactpy.backend.types import Location
 import json
 from pathlib import Path
 from fastapi.staticfiles import StaticFiles
+import asyncio
+import websockets
+
+
+async def connect_to_websocket():
+    # Ganti dengan URL WebSocket server yang sesuai
+    uri = "wss://nlflcx7lth.execute-api.ap-southeast-2.amazonaws.com/production/"
+
+    async with websockets.connect(uri) as websocket:
+        # Callback saat koneksi terbuka
+        print('Koneksi WebSocket terbuka.')
+
+        # Terus-menerus menerima pesan dari server
+        async for message in websocket:
+            print(f'Pesan dari server: {message}')
+            # Lakukan sesuatu dengan pesan yang diterima dari server
+
+    print('Koneksi WebSocket ditutup.')
 
 
 @component
 def coba() -> Component:
+    @use_effect
+    async def websocket_rps_api():
+        asyncio.get_event_loop().run_until_complete(connect_to_websocket())
+
     return html._(
         html.style(
             '''
@@ -38,7 +60,7 @@ def coba() -> Component:
         html.div(
             {
                 'class_name': 'accordion',
-                'id': 'accordionExample'
+                'id': 'accordionExample coba'
             },
             html.div(
                 {
