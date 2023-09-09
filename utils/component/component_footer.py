@@ -36,7 +36,6 @@ def component_footer() -> Component:
     }
 
     component_icon = []
-    index = 0
     for key, value in footer_icon.items():
         component_icon.append(
             html.a(
